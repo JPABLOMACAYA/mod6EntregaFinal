@@ -5,7 +5,7 @@ A)Carpeta 'Servidor':
   1.- api.js  --> corresponde a una API REST que contiene las siguientes rutas: 
     a)GET '/gastos', 
     b)POST '/gasto',
-    c)GET '/editarGasto', POST '/saveEditGasto' (Estas 2 reemplazaron a PUT /gasto),
+    c)GET '/editarGasto', POST '/saveEditGasto' (Estas 2 reemplazaron a PUT '/gasto'),
     d)DELETE '/gasto',
     e)GET '/roommates', POST '/roommates', GET '/'.
 
