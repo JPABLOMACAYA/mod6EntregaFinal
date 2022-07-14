@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Roommates</title>
+</head>
+
+<body>
+    <div class="row" id="rowTitulo">
+        <div class="col-4">
+        </div>
+        <div class="col-4" id="colTituloPrincipal">
+            <h1>Roommates</h1>
+        </div>
+        <div class="col-4" id="divCodStatus">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-5" id="divGralRoommates">
+            <div class="row">
+                <div class="col-3">
+                </div>
+                <div class="col-6" id="colTituloRoommates">
+                    <h4>Roommates</h4>
+                    <button id="addRoommate">Agregar roommate</button>
+                </div>
+                <div class="col-3">
+                </div>    
+            </div>
+            <br>
+            <div class="container" id="divTablaR">
+                <div class="row" id="filaEncabezadoR">
+                    <div class="col-4">
+                        <h6>Nombre</h6>
+                    </div>
+                    <div class="col-4">
+                        <h6>Debe</h6>
+                    </div>
+                    <div class="col-4">
+                        <h6>Recibe</h6>
+                    </div>     
+                </div>
+                <div class="container" id="bodyTablaR">
+                </div> 
+            </div> 
+        </div>
+        <div class="col-2" id="colAgregarGasto">
+            <br>
+            <h3>Agregar Gasto</h3>
+            <form action="gasto" method="post">
+                <h6 id="tituloSelect">Roommate:</h6>
+                <select class="form-select" name="selectRoommate" id="selectRoommate">
+                </select>
+                <br>
+                <h6>Descripción:</h6>
+                <textarea class="form-control" name="descripcion" id="descripcion"></textarea>
+                <br>
+                <h6>Monto:</h6>
+                <input type="number" class="form-control" name="monto" id="monto">
+                <br>
+                <br>
+                <button type="submit" id="addGasto">Agregar</button>
+                <br>
+                <br>
+            </form>
+        </div>
+        <div class="col-5" id="Historial">
+            <div class="row">
+                <div class="col-4">
+                </div>
+                <div class="col-4" id="colTituloHistorial">
+                    <h4>Historial</h4>
+                </div>
+                <div class="col-4">
+                </div>    
+            </div>
+            <br>
+            <div class="container" id="divTablaH">
+                <div class="row" id="filaEncabezadoH">
+                    <div class="col-4">
+                        <h6>Nombre</h6>
+                    </div>
+                    <div class="col-4">
+                        <h6>Comentario</h6>
+                    </div>
+                    <div class="col-2">
+                        <h6>Monto</h6>
+                    </div>    
+                    <div class="col-2">
+                        <h6>-</h6>
+                    </div>  
+                </div>
+                </div>
+                <div class="container" id="bodyTablaH">      
+            </div>                
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="appCliente.js"></script>
+    <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
+</body>
+
+</html>
