@@ -152,4 +152,5 @@ const renderStatus = (status) => {
                 divStatus.appendChild(nuevoParrafo);
 };        
 
-renderizar();
+//Se invoca renderizar para que se actualicen los datos cada vez que se carga la página principal.
+renderizar(); 
