@@ -8,7 +8,7 @@ const axios = require('axios').default;
 const { v4 : uuidv4 } = require('uuid');
 const { newRoommate, saveRoommate, saveGasto } = require('./fnModulos.js');
 
-//Se especifica el directorio donde se encuentran las páginas estáticas.
+//Se especifica el directorio donde se encuentran los recursos estáticos.
 app.use(express.static(__dirname + '/public'));
 
 //Se establece bodyParser para analizar texto como datos codificados de URL, utilizando librería querystring.
